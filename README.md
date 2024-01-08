@@ -1,2 +1,2 @@
-# sparkle-icons
-Chart-themed and open-source icon collection
+# Sparkle Icons
+Chart-themed and open-source icon collection.
