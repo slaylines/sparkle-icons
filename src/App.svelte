@@ -1,9 +1,9 @@
 <script>
 </script>
 
-<main class="w-full container mx-auto">
-  <header class="fixed top-0 left-0  w-screen h-fit pt-8 pb-4 sm:pt-4
-                 bg-white border-b border-gray-200">
+<main class="w-full container mx-auto px-6 sm:px-8 lg:px-10">
+  <header class="fixed top-0 left-0 z-50 w-screen h-fit pb-4 pt-8 sm:pt-4
+                 px-6 sm:px-8 lg:px-10 bg-white border-b border-gray-200">
     <div class="container mx-auto flex items-center justify-center flex-col
                 sm:items-end sm:justify-between sm:flex-row">
     <h1 class="mb-4 sm:mb-2">✨ Sparkle Icons</h1>
@@ -14,13 +14,14 @@
     </nav>
   </header>
 
-  <div class="flex w-full mt-[160px] sm:mt-[120px] -ml-2">
-    <div class="flex flex-wrap justify-center md:justify-start w-full md:w-2/3">
+  <div class="flex w-full flex-col-reverse md:flex-row mt-[8.5rem] sm:mt-[4.5rem] -ml-2">
+    <div class="flex flex-wrap w-full md:w-2/3 md:pt-8 pb-8">
       {#each {length: 48} as _, i}
-        <div class="w-[180px] h-[180px] m-2 bg-gray-200 rounded" />
+        <div class="w-[160px] h-[160px] m-2 bg-gray-200 rounded" />
       {/each}
     </div>
-    <div class="w-full h-fit md:w-1/3 sticky top-[160px] sm:top-[120px] overflow-auto">
+    <div class="w-full h-fit md:w-1/3 sticky top-[8.5rem] sm:top-[4.5rem]
+                mb-8 px-6 pt-8 pb-4 bg-white overflow-auto">
       <h2>Settings</h2>
       <div class="mt-4">
         Size: <input type="text" value="32"
