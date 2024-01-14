@@ -14,15 +14,11 @@
   }
 
   html {
-    @apply fixed w-full h-full text-base-sm md:text-base-md scroll-smooth;
+    @apply text-base-sm md:text-base-md scroll-smooth;
   }
 
   body {
-    @apply w-full h-full font-primary bg-white text-base/2 text-gray-800;
-  }
-
-  #app {
-    @apply w-full h-full overflow-hidden;
+    @apply font-primary bg-white text-base/2 text-gray-800;
   }
 
   h1 {
@@ -30,11 +26,17 @@
   }
 
   h2 {
-    @apply h1;
+    @apply h2;
   }
 
   h3 {
     @apply h3;
+  }
+
+  a {
+    @apply w-fit relative text-theme-4 hover:text-theme-5
+      border-b border-theme-4 hover:border-theme-5 border-opacity-50
+      transition-all duration-150 cursor-pointer outline-none;
   }
 }
 
@@ -44,15 +46,15 @@
   }
 
   .h1 {
-    @apply text-xxl/1 font-bold;
-  }
-
-  .h2 {
     @apply text-xl/1 font-bold;
   }
 
+  .h2 {
+    @apply text-lg/2 font-bold;
+  }
+
   .h3 {
-    @apply text-lg/2;
+    @apply text-md/2;
   }
 
   .text-small {
