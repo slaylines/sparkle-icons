@@ -11,7 +11,7 @@ export default {
       sm: '576px',
       md: '768px',
       lg: '1024px',
-      xl: '1280px',
+      xl: '1440px',
     },
     spacing: {
       px: '1px',
@@ -42,7 +42,7 @@ export default {
       sm: '0.875rem',
       base: '1rem',
       md: '1.25rem',
-      lg: '1.5rem',
+      lg: '1.75rem',
       xl: '2rem',
     },
     lineHeight: {
