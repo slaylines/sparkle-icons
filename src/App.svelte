@@ -78,7 +78,7 @@
 
 <main class="flex justify-center container mx-auto px-6 sm:px-8 lg:px-10">
   <div class="max-w-[800px] mt-[8.5rem] sm:mt-[4.5rem]">
-    <h2 class="w-full text-center mb-2 pt-4 md:pt-8">Basic Set</h2>
+    <h2 class="w-full text-center mb-2 pt-4 md:pt-8">Basic Icons</h2>
     <div class="flex flex-wrap justify-center">
       {#each Object.keys(basicIcons) as key}
         <a
@@ -90,7 +90,7 @@
         </a>
       {/each}
     </div>
-    <h2 class="w-full text-center mt-8 mb-2">Light Set</h2>
+    <h2 class="w-full text-center mt-8 mb-2">Light Icons</h2>
     <div class="flex flex-wrap justify-center">
       {#each Object.keys(lightIcons) as key}
         <a
@@ -102,7 +102,7 @@
         </a>
       {/each}
     </div>
-    <h2 class="w-full text-center mt-8 mb-2">Colored Set</h2>
+    <h2 class="w-full text-center mt-8 mb-2">Colored Icons</h2>
     <div class="flex flex-wrap justify-center pb-8">
       {#each Object.keys(colorIcons) as key}
         <a
