@@ -1,44 +1,44 @@
 <script>
-  import favicon from '@/public/favicon-colored.svg';
+  import favicon from '/favicon-colored.svg';
 
-  import lineBlack from '@/public/icons/line-black.svg';
-  import areaBlack from '@/public/icons/area-black.svg';
-  import bubbleBlack from '@/public/icons/bubble-black.svg';
-  import barBlack from '@/public/icons/bar-black.svg';
-  import histogramBlack from '@/public/icons/histogram-black.svg';
-  import candleBlack from '@/public/icons/candle-black.svg';
-  import pieBlack from '@/public/icons/pie-black.svg';
-  import doughnutBlack from '@/public/icons/doughnut-black.svg';
-  import treemapBlack from '@/public/icons/treemap-black.svg';
-  import heatmapBlack from '@/public/icons/heatmap-black.svg';
-  import networkBlack from '@/public/icons/network-black.svg';
-  import spiderBlack from '@/public/icons/spider-black.svg';
+  import lineBlack from '/icons/line-black.svg';
+  import areaBlack from '/icons/area-black.svg';
+  import bubbleBlack from '/icons/bubble-black.svg';
+  import barBlack from '/icons/bar-black.svg';
+  import histogramBlack from '/icons/histogram-black.svg';
+  import candleBlack from '/icons/candle-black.svg';
+  import pieBlack from '/icons/pie-black.svg';
+  import doughnutBlack from '/icons/doughnut-black.svg';
+  import treemapBlack from '/icons/treemap-black.svg';
+  import heatmapBlack from '/icons/heatmap-black.svg';
+  import networkBlack from '/icons/network-black.svg';
+  import spiderBlack from '/icons/spider-black.svg';
 
-  import lineLight from '@/public/icons/line-light.svg';
-  import areaLight from '@/public/icons/area-light.svg';
-  import bubbleLight from '@/public/icons/bubble-light.svg';
-  import barLight from '@/public/icons/bar-light.svg';
-  import histogramLight from '@/public/icons/histogram-light.svg';
-  import candleLight from '@/public/icons/candle-light.svg';
-  import pieLight from '@/public/icons/pie-light.svg';
-  import doughnutLight from '@/public/icons/doughnut-light.svg';
-  import treemapLight from '@/public/icons/treemap-light.svg';
-  import heatmapLight from '@/public/icons/heatmap-light.svg';
-  import networkLight from '@/public/icons/network-light.svg';
-  import spiderLight from '@/public/icons/spider-light.svg';
+  import lineLight from '/icons/line-light.svg';
+  import areaLight from '/icons/area-light.svg';
+  import bubbleLight from '/icons/bubble-light.svg';
+  import barLight from '/icons/bar-light.svg';
+  import histogramLight from '/icons/histogram-light.svg';
+  import candleLight from '/icons/candle-light.svg';
+  import pieLight from '/icons/pie-light.svg';
+  import doughnutLight from '/icons/doughnut-light.svg';
+  import treemapLight from '/icons/treemap-light.svg';
+  import heatmapLight from '/icons/heatmap-light.svg';
+  import networkLight from '/icons/network-light.svg';
+  import spiderLight from '/icons/spider-light.svg';
 
-  import lineColored from '@/public/icons/line-colored.svg';
-  import areaColored from '@/public/icons/area-colored.svg';
-  import bubbleColored from '@/public/icons/bubble-colored.svg';
-  import barColored from '@/public/icons/bar-colored.svg';
-  import histogramColored from '@/public/icons/histogram-colored.svg';
-  import candleColored from '@/public/icons/candle-colored.svg';
-  import pieColored from '@/public/icons/pie-colored.svg';
-  import doughnutColored from '@/public/icons/doughnut-colored.svg';
-  import treemapColored from '@/public/icons/treemap-colored.svg';
-  import heatmapColored from '@/public/icons/heatmap-colored.svg';
-  import networkColored from '@/public/icons/network-colored.svg';
-  import spiderColored from '@/public/icons/spider-colored.svg';
+  import lineColored from '/icons/line-colored.svg';
+  import areaColored from '/icons/area-colored.svg';
+  import bubbleColored from '/icons/bubble-colored.svg';
+  import barColored from '/icons/bar-colored.svg';
+  import histogramColored from '/icons/histogram-colored.svg';
+  import candleColored from '/icons/candle-colored.svg';
+  import pieColored from '/icons/pie-colored.svg';
+  import doughnutColored from '/icons/doughnut-colored.svg';
+  import treemapColored from '/icons/treemap-colored.svg';
+  import heatmapColored from '/icons/heatmap-colored.svg';
+  import networkColored from '/icons/network-colored.svg';
+  import spiderColored from '/icons/spider-colored.svg';
 
   const basicIcons = [
     lineBlack, areaBlack, bubbleBlack,
@@ -72,13 +72,13 @@
       <a href="https://github.com/slaylines/sparkle-icons/blob/master/README.md" target="_blank">
         How to Use
       </a>
-      <a href="#" target="_blank">Download</a>
+      <a href="/sparkle-icons.zip" download>Download</a>
       <a href="https://github.com/slaylines/sparkle-icons" target="_blank">Github</a>
     </nav>
   </header>
 
   <div class="max-w-[800px] mt-[8.5rem] sm:mt-[4.5rem]">
-    <h2 class="w-full text-center mb-2 pt-4 md:pt-8">Basic Icons</h2>
+    <h2 class="w-full text-center mb-2 pt-4 md:pt-8">Basic Set</h2>
     <div class="flex flex-wrap justify-center">
       {#each basicIcons as icon}
         <div class="w-[100px] h-[100px] flex justify-center items-center m-3 bg-gray-100 rounded">
@@ -86,7 +86,7 @@
         </div>
       {/each}
     </div>
-    <h2 class="w-full text-center mt-8 mb-2">Light Icons</h2>
+    <h2 class="w-full text-center mt-8 mb-2">Light Set</h2>
     <div class="flex flex-wrap justify-center">
       {#each lightIcons as icon}
         <div class="w-[100px] h-[100px] flex justify-center items-center m-3 bg-gray-100 rounded">
@@ -94,7 +94,7 @@
         </div>
       {/each}
     </div>
-    <h2 class="w-full text-center mt-8 mb-2">Colored Icons</h2>
+    <h2 class="w-full text-center mt-8 mb-2">Colored Set</h2>
     <div class="flex flex-wrap justify-center pb-8">
       {#each colorIcons as icon}
         <div class="w-[100px] h-[100px] flex justify-center items-center m-3 bg-gray-100 rounded">

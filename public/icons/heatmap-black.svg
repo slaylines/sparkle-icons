@@ -7,7 +7,7 @@
 <rect x="8" y="16" width="8" height="8" fill="#333333"/>
 <rect x="16" y="8" width="8" height="8" fill="#333333"/>
 <rect y="8" width="8" height="8" fill="#333333" fill-opacity="0.5"/>
-<rect x="24" width="8" height="8" fill="#333333" fill-opacity="0.5"/>
+<rect x="24" width="8" height="8" fill="#333333"/>
 <rect x="8" width="8" height="8" fill="#333333" fill-opacity="0.5"/>
 <rect width="8" height="8" fill="#333333"/>
 </svg>
