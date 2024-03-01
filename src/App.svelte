@@ -1,5 +1,6 @@
 <script>
   import favicon from '/favicon-colored.svg';
+  import logo from '/slaylines-logo.svg';
 
   import lineBlack from '/icons/line-black.svg';
   import areaBlack from '/icons/area-black.svg';
@@ -60,23 +61,22 @@
   };
 </script>
 
-<main class="flex justify-center container mx-auto px-6 sm:px-8 lg:px-10">
-  <header class="fixed top-0 left-0 z-50 w-screen h-fit pb-4 pt-8 sm:pt-4
-                 px-6 sm:px-8 lg:px-10 bg-white border-b border-gray-200">
-    <div class="container mx-auto flex items-center justify-center flex-col
-                sm:items-end sm:justify-between sm:flex-row">
-    <h1 class="flex mb-4 sm:mb-2">
-      <img class="-mb-2 mr-2" src={favicon} /> Sparkle Icons
-    </h1>
-    <nav class="flex gap-6 md:gap-8 lg:gap-10 mb-2 text-md">
-      <a href="https://github.com/slaylines/sparkle-icons/blob/master/README.md" target="_blank">
-        How to Use
-      </a>
-      <a href="/sparkle-icons" download>Download</a>
-      <a href="https://github.com/slaylines/sparkle-icons" target="_blank">Github</a>
-    </nav>
-  </header>
+<header class="fixed top-0 left-0 z-50 w-screen h-fit pb-4 pt-8 sm:pt-4
+              px-6 sm:px-8 lg:px-10 bg-white border-b border-gray-200">
+  <div class="container mx-auto flex items-center justify-center flex-col
+              sm:items-end sm:justify-between sm:flex-row">
+  <h1 class="flex mb-4 sm:mb-2">
+    <img class="-mb-2 mr-2" src={favicon} /> Sparkle Icons
+  </h1>
+  <nav class="flex gap-6 md:gap-8 lg:gap-10 mb-2 text-md">
+    <a href="/sparkle-icons.zip" download data-umami-event="Download button">Download</a>
+    <a href="https://github.com/slaylines/sparkle-icons" target="_blank" data-umami-event="Github link">
+      Github
+    </a>
+  </nav>
+</header>
 
+<main class="flex justify-center container mx-auto px-6 sm:px-8 lg:px-10">
   <div class="max-w-[800px] mt-[8.5rem] sm:mt-[4.5rem]">
     <h2 class="w-full text-center mb-2 pt-4 md:pt-8">Basic Set</h2>
     <div class="flex flex-wrap justify-center">
@@ -116,3 +116,10 @@
     </div>
   </div>
 </main>
+
+<footer class="flex justify-between sm:justify-start items-baseline w-screen py-4 px-6 sm:px-8 lg:px-10 bg-white border-t border-gray-200">
+  <a class="border-none" href="https://slaylines.io" target="_blank">
+    <img class="h-4" src={logo} />
+  </a>
+  <div class="ml-4 text-sm">©&nbsp;{new Date().getFullYear()}</div>
+</footer>
