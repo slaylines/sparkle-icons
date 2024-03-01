@@ -118,7 +118,7 @@
 </main>
 
 <footer class="flex justify-between sm:justify-start items-baseline w-screen py-4 px-6 sm:px-8 lg:px-10 bg-white border-t border-gray-200">
-  <a class="border-none" href="https://slaylines.io" target="_blank">
+  <a class="border-none" href="https://slaylines.io" target="_blank" data-umami-event="Slaylines link">
     <img class="h-4" src={logo} />
   </a>
   <div class="ml-4 text-sm">©&nbsp;{new Date().getFullYear()}</div>
