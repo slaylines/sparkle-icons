@@ -40,24 +40,24 @@
   import networkColored from '/icons/network-colored.svg';
   import spiderColored from '/icons/spider-colored.svg';
 
-  const basicIcons = [
-    lineBlack, areaBlack, bubbleBlack,
-    barBlack, histogramBlack, candleBlack,
-    pieBlack, doughnutBlack, treemapBlack,
-    heatmapBlack, networkBlack, spiderBlack,
-  ];
-  const lightIcons = [
-    lineLight, areaLight, bubbleLight,
-    barLight, histogramLight, candleLight,
-    pieLight, doughnutLight, treemapLight,
-    heatmapLight, networkLight, spiderLight,
-  ];
-  const colorIcons = [
-    lineColored, areaColored, bubbleColored,
-    barColored, histogramColored, candleColored,
-    pieColored, doughnutColored, treemapColored,
-    heatmapColored, networkColored, spiderColored,
-  ];
+  const basicIcons = {
+    line: lineBlack, area: areaBlack, bubble: bubbleBlack,
+    bar: barBlack, histogram: histogramBlack, candle: candleBlack,
+    pie: pieBlack, doughnut: doughnutBlack, treemap: treemapBlack,
+    heatmap: heatmapBlack, network: networkBlack, spider: spiderBlack,
+  };
+  const lightIcons = {
+    line: lineLight, area: areaLight, bubble: bubbleLight,
+    bar: barLight, histogram: histogramLight, candle: candleLight,
+    pie: pieLight, doughnut: doughnutLight, treemap: treemapLight,
+    heatmap: heatmapLight, network: networkLight, spider: spiderLight,
+  };
+  const colorIcons = {
+    line: lineColored, area: areaColored, bubble: bubbleColored,
+    bar: barColored, histogram: histogramColored, candle: candleColored,
+    pie: pieColored, doughnut: doughnutColored, treemap: treemapColored,
+    heatmap: heatmapColored, network: networkColored, spider: spiderColored,
+  };
 </script>
 
 <main class="flex justify-center container mx-auto px-6 sm:px-8 lg:px-10">
@@ -72,7 +72,7 @@
       <a href="https://github.com/slaylines/sparkle-icons/blob/master/README.md" target="_blank">
         How to Use
       </a>
-      <a href="/sparkle-icons.zip" download>Download</a>
+      <a href="/sparkle-icons" download>Download</a>
       <a href="https://github.com/slaylines/sparkle-icons" target="_blank">Github</a>
     </nav>
   </header>
@@ -80,26 +80,38 @@
   <div class="max-w-[800px] mt-[8.5rem] sm:mt-[4.5rem]">
     <h2 class="w-full text-center mb-2 pt-4 md:pt-8">Basic Set</h2>
     <div class="flex flex-wrap justify-center">
-      {#each basicIcons as icon}
-        <div class="w-[100px] h-[100px] flex justify-center items-center m-3 bg-gray-100 rounded">
-          <img src={icon} />
-        </div>
+      {#each Object.keys(basicIcons) as key}
+        <a
+          class="w-[100px] h-[100px] flex justify-center items-center m-3 bg-gray-100 border-none rounded"
+          href={`/icons/${key}-black.svg`}
+          download
+        >
+          <img src={basicIcons[key]} />
+        </a>
       {/each}
     </div>
     <h2 class="w-full text-center mt-8 mb-2">Light Set</h2>
     <div class="flex flex-wrap justify-center">
-      {#each lightIcons as icon}
-        <div class="w-[100px] h-[100px] flex justify-center items-center m-3 bg-gray-100 rounded">
-          <img src={icon} />
-        </div>
+      {#each Object.keys(lightIcons) as key}
+        <a
+          class="w-[100px] h-[100px] flex justify-center items-center m-3 bg-gray-100 border-none rounded"
+          href={`/icons/${key}-light.svg`}
+          download
+        >
+          <img src={lightIcons[key]} />
+        </a>
       {/each}
     </div>
     <h2 class="w-full text-center mt-8 mb-2">Colored Set</h2>
     <div class="flex flex-wrap justify-center pb-8">
-      {#each colorIcons as icon}
-        <div class="w-[100px] h-[100px] flex justify-center items-center m-3 bg-gray-100 rounded">
-          <img src={icon} />
-        </div>
+      {#each Object.keys(colorIcons) as key}
+        <a
+          class="w-[100px] h-[100px] flex justify-center items-center m-3 bg-gray-100 border-none rounded"
+          href={`/icons/${key}-colored.svg`}
+          download
+        >
+          <img src={colorIcons[key]} />
+        </a>
       {/each}
     </div>
   </div>
