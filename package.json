@@ -7,7 +7,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "deploy": "yarn build && yarn copy",
+    "copy": "source .env && rsync -qazP $DEPLOY_FILES $DEPLOY_TARGET"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "3.0.0",
